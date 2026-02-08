@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import './App.css';
 
-// Header component
 function Header({ title }) {
   return (
     <header className="bg-slate-800 p-6 rounded-t-lg mb-4">
@@ -12,7 +11,6 @@ function Header({ title }) {
   );
 }
 
-// Time component (time only)
 function Time() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
@@ -21,7 +19,6 @@ function Time() {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
 
-    // Cleanup interval on unmount
     return () => clearInterval(timer);
   }, []);
 
@@ -32,7 +29,6 @@ function Time() {
   );
 }
 
-// Info component (static text)
 function Info() {
   return (
     <p className="bg-slate-900 p-4 rounded-b-lg text-slate-300 text-sm leading-relaxed text-center">
@@ -45,7 +41,6 @@ function Info() {
   );
 }
 
-// App component
 function App() {
   return (
     <div className="max-w-2xl mx-auto p-4">
