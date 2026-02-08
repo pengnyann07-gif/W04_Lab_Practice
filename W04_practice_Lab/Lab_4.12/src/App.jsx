@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-// Lab 4.12: Creating your first separate React component
 function Header() {
   return (
     <header className="bg-slate-800 p-10 rounded-t-lg mb-4">
@@ -19,7 +18,6 @@ function App() {
 
   return (
     <div className="max-w-2xl mx-auto p-4">
-      {/* Lab 4.12: Using the new Header component */}
       <Header />
 
       <main className="bg-slate-900 p-8 rounded-b-lg text-slate-300 text-sm leading-relaxed text-center">
