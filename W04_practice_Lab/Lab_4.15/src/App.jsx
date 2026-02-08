@@ -4,11 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  // State for the dollar value (15 as per the lab instructions)
   const [dollars] = useState(15);
 
-  // --- LAB FUNCTIONS ---
-  // These implement the logic to convert the dollar value to other currencies
   const convertToDong = (usd) => {
     return usd * 24560; 
   };
